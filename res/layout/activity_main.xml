@@ -15,16 +15,26 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+<<<<<<< HEAD
             style="?android:attr/buttonBarButtonStyle"
+=======
+>>>>>>> 438661aae499b8f7301e4d24f08612c50d80373a
             android:id="@+id/true_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/true_button"/>
         <Button
+<<<<<<< HEAD
             style="?android:attr/buttonBarButtonStyle"
+=======
+>>>>>>> 438661aae499b8f7301e4d24f08612c50d80373a
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/false_button"/>
     </LinearLayout>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 438661aae499b8f7301e4d24f08612c50d80373a
 </LinearLayout>
