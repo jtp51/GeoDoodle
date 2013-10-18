@@ -1,34 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
     package="com.todd.geodoodle"
-=======
-    package="com.todd.geoquiz"
->>>>>>> 438661aae499b8f7301e4d24f08612c50d80373a
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-<<<<<<< HEAD
         android:minSdkVersion="14"
-=======
-        android:minSdkVersion="11"
->>>>>>> 438661aae499b8f7301e4d24f08612c50d80373a
         android:targetSdkVersion="18" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-<<<<<<< HEAD
         android:theme="@android:style/Theme.Holo.Light" >
         <activity
             android:name="com.todd.geodoodle.MainActivity"
-=======
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.todd.geoquiz.MainActivity"
->>>>>>> 438661aae499b8f7301e4d24f08612c50d80373a
+
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,14 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity
             android:name="com.todd.geodoodle.DisplaydetailsActivity"
             android:label="@string/title_activity_displaydetails"
             android:parentActivityName="com.todd.geodoodle.MainActivity">
         </activity>
-=======
->>>>>>> 438661aae499b8f7301e4d24f08612c50d80373a
     </application>
 
 </manifest>

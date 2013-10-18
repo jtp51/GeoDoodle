@@ -7,9 +7,5 @@
     <!-- Settings, should always be in the overflow -->
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
-<<<<<<< HEAD
           android:showAsAction="never" />
-=======
-          android:showAsAction="ifRoom" />
->>>>>>> 438661aae499b8f7301e4d24f08612c50d80373a
 </menu>
