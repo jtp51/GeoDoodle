@@ -1,7 +1,9 @@
 package com.todd.geodoodle;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.content.Context;
+//import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -18,16 +20,23 @@ public class DisplaydetailsActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_displaydetails);
 		
-		// Get the message from the intent
-	    Intent intent = getIntent();
-	    String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-	    this.textfield = (TextView)findViewById(R.id.displaytext);
-	    this.textfield.setText(message);
-		
-		
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB){
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
+	}
+	
+	@Override
+	public void onResume(){
+		super.onResume();
+		Context context = this.getApplicationContext();
+		SharedPreferences sp = context.getSharedPreferences("quiz", 0);
+		String msg = sp.getString("key0", "Bye");
+		
+		// Get the message from the intent
+//	    Intent intent = getIntent();
+//	    String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+	    this.textfield = (TextView)findViewById(R.id.displaytext);
+	    this.textfield.setText(msg);
 	}
 
 	@Override

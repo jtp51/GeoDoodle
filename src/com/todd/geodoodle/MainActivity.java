@@ -1,7 +1,9 @@
 package com.todd.geodoodle;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -50,6 +52,13 @@ public class MainActivity extends Activity {
     }
     
     public void sendMessage(View view) {
+    	Context context = view.getContext();
+    	SharedPreferences sp = context.getSharedPreferences("quiz", 0);
+    	SharedPreferences.Editor editor = sp.edit();
+    	editor.putString("key0", "Hi");
+    	editor.putString("key1", "Todd");
+    	editor.commit();
+    	
         Intent intent = new Intent(this, DisplaydetailsActivity.class);
         intent.putExtra(EXTRA_MESSAGE, "Pass this message");
         startActivity(intent);
